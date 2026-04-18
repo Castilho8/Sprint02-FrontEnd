@@ -1,0 +1,105 @@
+/* Sidebar */
+
+#sidebar {
+  width: 270px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f9fdf9 0%, #ffffff 100%);
+  border-right: 1px solid #e0ede0;
+  flex-shrink: 0;
+}
+
+/* Logo */
+.sidebar-logo {
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: #fff;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.35);
+}
+
+.sidebar-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1b1b1b;
+  line-height: 1.2;
+}
+
+.sidebar-subtitle {
+  font-size: 0.6rem;
+  color: #6c757d;
+  letter-spacing: 0.1em;
+}
+
+/* Perfil */
+.sidebar-profile {
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+  border: 1px solid #c8e6c9;
+}
+
+.avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border: 3px solid #43a047;
+  box-shadow: 0 0 0 3px #c8e6c9;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1b1b1b;
+}
+
+.profile-level {
+  font-size: 0.75rem;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.xp-label {
+  font-size: 0.7rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Nav links */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #495057;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar-link i {
+  font-size: 1.1rem;
+}
+
+.sidebar-link:hover {
+  background-color: #f1f8f1;
+  color: #2e7d32;
+}
+
+.sidebar-link.active {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  padding: 2rem;
+}
