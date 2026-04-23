@@ -1,34 +1,32 @@
-/* Sobrescreve o verde do Bootstrap para o tom do projeto */
 :root {
   --bs-success: #2e7d32;
   --bs-success-rgb: 46, 125, 50;
 }
 
-/* Letter-spacing para labels (Bootstrap não tem utilitário para isso) */
 .label-uppercase {
   letter-spacing: 0.1em;
 }
 
-/* Hero: fundo com leve tom esverdeado */
 .hero-section {
   background-color: #f4f6f4;
 }
 
-/* Badge "+120 hoje": fundo verde claro */
 .badge-hoje {
   background-color: #e8f5e9;
 }
 
-/* Fundo dos cards inferiores */
-.card-planta { background-color: #eef2ee; }
-.card-luz    { background: radial-gradient(ellipse at center, #dce8f5 0%, #eaf0f8 70%); }
+.card-planta {
+  background-color: #eef2ee;
+}
 
-/* Altura fixa compartilhada entre os cards */
+.card-luz {
+  background: radial-gradient(ellipse at center, #dce8f5 0%, #eaf0f8 70%);
+}
+
 .ilustracao-visual {
   height: 160px;
 }
 
-/* Luz Interior — círculos concêntricos */
 .luz-visual {
   position: relative;
   display: flex;
@@ -42,9 +40,23 @@
   border: 1px solid #a8bfd4;
 }
 
-.ring-3 { width: 150px; height: 150px; opacity: 0.25; }
-.ring-2 { width: 105px; height: 105px; opacity: 0.45; }
-.ring-1 { width: 68px;  height: 68px;  opacity: 0.7;  }
+.ring-3 {
+  width: 150px;
+  height: 150px;
+  opacity: 0.25;
+}
+
+.ring-2 {
+  width: 105px;
+  height: 105px;
+  opacity: 0.45;
+}
+
+.ring-1 {
+  width: 68px;
+  height: 68px;
+  opacity: 0.7;
+}
 
 .luz-core {
   width: 44px;
@@ -61,7 +73,6 @@
   box-shadow: 0 2px 8px rgba(30, 58, 95, 0.15);
 }
 
-/* Missões do Dia */
 .missao-icone {
   width: 52px;
   height: 52px;
@@ -76,15 +87,13 @@
   height: 5px;
 }
 
-/* Card Yoga (evento ao vivo) */
 .card-yoga {
   min-height: 200px;
   background:
-    linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%, transparent 100%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 60%, transparent 100%),
     url('https://images.unsplash.com/photo-1588286840104-8957b019727f?w=800&q=80') center/cover no-repeat;
 }
 
-/* Hover card Caminhada */
 .card-caminhada {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
