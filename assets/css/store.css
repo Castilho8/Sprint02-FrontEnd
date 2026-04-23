@@ -1,0 +1,140 @@
+.reward-card {
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #e8ede8;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.reward-card:hover {
+    box-shadow: 0 8px 28px rgba(46, 125, 50, 0.13);
+    transform: translateY(-3px);
+}
+
+.reward-img {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+
+.points-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 50px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.points-badge.locked {
+    background: #f5f5f5;
+    color: #9e9e9e;
+}
+
+.category-pill {
+    border-radius: 50px;
+    padding: 7px 18px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: transparent;
+    color: #6c757d;
+}
+
+.category-pill.active {
+    background: #2e7d32;
+    color: #fff;
+    border-color: #2e7d32;
+}
+
+.category-pill:not(.active):hover {
+    background: #f1f8f1;
+    color: #2e7d32;
+    border-color: #c8e6c9;
+}
+
+.balance-card {
+    background: linear-gradient(135deg, #2e7d32, #43a047);
+    border-radius: 20px;
+    color: #fff;
+}
+
+.btn-resgatar {
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 18px;
+    transition: all 0.15s;
+}
+
+.btn-resgatar.can-buy {
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+}
+
+.btn-resgatar.can-buy:hover {
+    background: #1b5e20;
+}
+
+.btn-resgatar.locked {
+    background: #f0f0f0;
+    color: #aaa;
+    border: none;
+    cursor: not-allowed;
+}
+
+.featured-card {
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    border: 1.5px solid #c8e6c9;
+    border-radius: 20px;
+}
+
+.tag-digital {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.tag-fisico {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.tag-saude {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.tag-parceiro {
+    background: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.item-tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    border-radius: 50px;
+    padding: 2px 9px;
+}
+
+.section-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    margin-bottom: 14px;
+}
+
+.modal-confirm .modal-content {
+    border-radius: 20px;
+    border: none;
+}
