@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareFit+ · Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar Mobile -->
+    <nav class="navbar d-lg-none" id="mobile-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <div class="brand-icon"><i class="bi bi-leaf-fill"></i></div>
+                CareFit+
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html"><i class="bi bi-house"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="missions.html"><i class="bi bi-check-circle"></i> Missões</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store.html"><i class="bi bi-cart"></i> Loja</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="profile.html"><i class="bi bi-person"></i> Perfil</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex vh-100 overflow-hidden">
+        <!-- Sidebar -->
+        <div class="d-none d-lg-flex flex-column" id="sidebar">
+            <div class="sidebar-brand d-flex align-items-center gap-3 p-4">
+                <div class="sidebar-logo d-flex align-items-center justify-content-center rounded-circle">
+                    <i class="bi bi-leaf-fill"></i>
+                </div>
+                <div>
+                    <div class="sidebar-title">CareFit+</div>
+                    <div class="sidebar-subtitle">THE LIVING SANCTUARY</div>
+                </div>
+            </div>
+            <nav class="flex-grow-1 px-3">
+                <a href="../../index.html" class="sidebar-link"><i class="bi bi-house"></i> Home</a>
+                <a href="missions.html" class="sidebar-link"><i class="bi bi-check-circle"></i> Missões</a>
+                <a href="store.html" class="sidebar-link"><i class="bi bi-cart"></i> Loja</a>
+                <a href="profile.html" class="sidebar-link active"><i class="bi bi-person"></i> Perfil</a>
+            </nav>
+            <div class="sidebar-profile mx-3 mb-3 p-3 rounded-4">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="avatar-wrapper">
+                        <img src="https://i.pravatar.cc/56?img=12" class="avatar-img rounded-circle" alt="Avatar">
+                    </div>
+                    <div>
+                        <div class="profile-name">Bruno Silva</div>
+                        <div class="profile-level"><i class="bi bi-shield-fill-check"></i> Nível 12 · Guerreiro</div>
+                    </div>
+                </div>
+                <div class="xp-label d-flex justify-content-between mb-1">
+                    <span>XP</span><span>740 / 1000</span>
+                </div>
+                <div class="progress" style="height: 8px; border-radius: 50px;">
+                    <div class="progress-bar" style="width: 74%; background: linear-gradient(90deg, #43a047, #a5d6a7);"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <main class="flex-grow-1 p-4 overflow-y-auto" id="main-content">
+
+            <!-- Top bar -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold text-success mb-0">Perfil</h5>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="badge rounded-pill border bg-white text-dark fw-semibold px-3 py-2">
+                        <i class="bi bi-fire text-danger"></i> 12 Dias
+                    </span>
+                    <i class="bi bi-bell fs-5 text-secondary"></i>
+                </div>
+            </div>
+
+            <!-- Hero do perfil -->
+            <div class="profile-hero p-4 mb-4">
+                <div class="d-flex align-items-center gap-4 flex-wrap">
+                    <div class="position-relative">
+                        <img src="https://i.pravatar.cc/200?img=12" class="avatar-large" alt="Avatar">
+                        <button class="btn btn-sm btn-success rounded-circle position-absolute bottom-0 end-0 p-1 lh-1"
+                            style="width:26px;height:26px;font-size:0.7rem;" title="Alterar foto">
+                            <i class="bi bi-camera-fill"></i>
+                        </button>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <h3 class="fw-bold mb-0">Bruno Silva</h3>
+                            <span class="level-badge"><i class="bi bi-shield-fill-check me-1"></i>Nível 12 · Guerreiro</span>
+                        </div>
+                        <p class="text-secondary small mb-2">bruno.silva@empresa.com.br · Membro desde Jan 2024</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="health-tag" style="border-color:#c8e6c9;color:#2e7d32;background:#f1f8f1;">
+                                <i class="bi bi-person-arms-up"></i> Físico: Intermediário
+                            </span>
+                            <span class="health-tag" style="border-color:#b3cfe8;color:#1565c0;background:#f0f6fd;">
+                                <i class="bi bi-sun"></i> Mental: Iniciante
+                            </span>
+                            <span class="health-tag" style="border-color:#f5c6cb;color:#b71c1c;background:#fff5f5;">
+                                <i class="bi bi-fire"></i> 12 dias de streak
+                            </span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-success rounded-pill px-4" onclick="switchTab('dados', document.querySelector('[data-tab=dados]'))">
+                        <i class="bi bi-pencil me-1"></i>Editar Perfil
+                    </button>
+                </div>
+
+                <!-- Stats rápidos -->
+                <div class="row g-3 mt-3">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-value text-success">840</div>
+                            <div class="stat-label">Pontos atuais</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-value">47</div>
+                            <div class="stat-label">Dias perfeitos</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-value" style="color:#1565c0;">128</div>
+                            <div class="stat-label">Missões concluídas</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <div class="stat-value" style="color:#e65100;">8</div>
+                            <div class="stat-label">Conquistas desbloqueadas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="d-flex gap-2 mb-4 flex-wrap">
+                <button class="tab-profile active" data-tab="dados" onclick="switchTab('dados', this)">Dados Pessoais</button>
+                <button class="tab-profile" data-tab="saude" onclick="switchTab('saude', this)">Saúde</button>
+                <button class="tab-profile" data-tab="conquistas" onclick="switchTab('conquistas', this)">Conquistas</button>
+                <button class="tab-profile" data-tab="privacidade" onclick="switchTab('privacidade', this)">Privacidade & LGPD</button>
+            </div>
+
+            <!-- Aba: Dados Pessoais -->
+            <div id="tab-dados">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="info-card p-4 mb-4">
+                            <div class="section-title mb-3">Informações Pessoais</div>
+                            <div id="view-mode">
+                                <div class="info-row">
+                                    <div><div class="info-label">NOME COMPLETO</div><div class="info-value">Bruno Silva</div></div>
+                                    <button class="edit-btn" onclick="toggleEdit()"><i class="bi bi-pencil me-1"></i>Editar</button>
+                                </div>
+                                <div class="info-row">
+                                    <div><div class="info-label">E-MAIL</div><div class="info-value">bruno.silva@empresa.com.br</div></div>
+                                </div>
+                                <div class="info-row">
+                                    <div><div class="info-label">TELEFONE</div><div class="info-value">(11) 99876-5432</div></div>
+                                </div>
+                                <div class="info-row">
+                                    <div><div class="info-label">DATA DE NASCIMENTO</div><div class="info-value">15 de março de 1990</div></div>
+                                </div>
+                                <div class="info-row">
+                                    <div><div class="info-label">EMPRESA</div><div class="info-value">TechCorp Soluções Ltda.</div></div>
+                                </div>
+                            </div>
+                            <div id="edit-mode" style="display:none;">
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-secondary">Nome completo</label>
+                                    <input type="text" class="form-control rounded-3" value="Bruno Silva">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-secondary">E-mail</label>
+                                    <input type="email" class="form-control rounded-3" value="bruno.silva@empresa.com.br">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-secondary">Telefone</label>
+                                    <input type="tel" class="form-control rounded-3" value="(11) 99876-5432">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-secondary">Data de nascimento</label>
+                                    <input type="date" class="form-control rounded-3" value="1990-03-15">
+                                </div>
+                                <div class="d-flex gap-2 mt-4">
+                                    <button class="btn btn-success rounded-pill px-4" onclick="saveEdit()">Salvar alterações</button>
+                                    <button class="btn btn-light rounded-pill px-4" onclick="toggleEdit()">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <!-- Progresso de nível -->
+                        <div class="info-card p-4 mb-4">
+                            <div class="section-title mb-3">Progresso de Nível</div>
+                            <div class="d-flex justify-content-between fw-semibold small mb-2">
+                                <span>Nível 12 · Guerreiro</span>
+                                <span class="text-success">740 / 1000 XP</span>
+                            </div>
+                            <div class="progress rounded-pill mb-2" style="height:10px;">
+                                <div class="progress-bar" style="width:74%;background:linear-gradient(90deg,#2e7d32,#66bb6a);"></div>
+                            </div>
+                            <p class="text-secondary small mb-0">Faltam 260 XP para o Nível 13 · Mestre</p>
+                            <hr>
+                            <div class="section-title mb-2" style="margin-top:4px;">Próxima evolução</div>
+                            <div class="d-flex align-items-center gap-3 p-3 rounded-3" style="background:#f8fdf8;">
+                                <div style="font-size:2rem;"><i class="bi bi-tree-fill text-success"></i></div>
+                                <div>
+                                    <div class="fw-semibold small">Nível 13 · Mestre</div>
+                                    <div class="text-secondary" style="font-size:0.78rem;">Acesso a missões exclusivas e recompensas especiais.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Integrações -->
+                        <div class="info-card p-4">
+                            <div class="section-title mb-3">Integrações</div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div style="font-size:1.5rem;"><i class="bi bi-heart-fill text-danger"></i></div>
+                                    <div>
+                                        <div class="fw-semibold small">Apple Health</div>
+                                        <div class="text-secondary" style="font-size:0.75rem;">Sincronizado</div>
+                                    </div>
+                                </div>
+                                <span class="badge bg-success rounded-pill px-3">Ativo</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div style="font-size:1.5rem;"><i class="bi bi-activity text-success"></i></div>
+                                    <div>
+                                        <div class="fw-semibold small">Google Fit</div>
+                                        <div class="text-secondary" style="font-size:0.75rem;">Não conectado</div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-success rounded-pill px-3">Conectar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba: Saúde -->
+            <div id="tab-saude" style="display:none;">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="info-card p-4 mb-4">
+                            <div class="section-title mb-3">Dados de Saúde</div>
+                            <div class="info-row">
+                                <div><div class="info-label">ALTURA</div><div class="info-value">178 cm</div></div>
+                                <button class="edit-btn"><i class="bi bi-pencil me-1"></i>Editar</button>
+                            </div>
+                            <div class="info-row">
+                                <div><div class="info-label">PESO</div><div class="info-value">74 kg</div></div>
+                            </div>
+                            <div class="info-row">
+                                <div><div class="info-label">IMC</div><div class="info-value">23.4 <span class="badge bg-success rounded-pill ms-1" style="font-size:0.65rem;">Normal</span></div></div>
+                            </div>
+                            <div class="info-row">
+                                <div><div class="info-label">NÍVEL DE ATIVIDADE FÍSICA</div><div class="info-value">Intermediário</div></div>
+                            </div>
+                            <div class="info-row">
+                                <div><div class="info-label">OBJETIVO PRINCIPAL</div><div class="info-value">Reduzir estresse e melhorar qualidade do sono</div></div>
+                            </div>
+                            <div class="info-row">
+                                <div><div class="info-label">CONDIÇÕES DE SAÚDE</div><div class="info-value">Nenhuma registrada</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="info-card p-4">
+                            <div class="section-title mb-3">Preferências de Missões</div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="health-tag" style="border-color:#c8e6c9;color:#2e7d32;background:#f1f8f1;"><i class="bi bi-person-walking me-1"></i>Caminhada</span>
+                                <span class="health-tag" style="border-color:#c8e6c9;color:#2e7d32;background:#f1f8f1;"><i class="bi bi-droplet-fill me-1"></i>Hidratação</span>
+                                <span class="health-tag" style="border-color:#b3cfe8;color:#1565c0;background:#f0f6fd;"><i class="bi bi-person-arms-up me-1"></i>Meditação</span>
+                                <span class="health-tag" style="border-color:#b3cfe8;color:#1565c0;background:#f0f6fd;"><i class="bi bi-book me-1"></i>Leitura</span>
+                                <span class="health-tag" style="border-color:#c8e6c9;color:#2e7d32;background:#f1f8f1;"><i class="bi bi-moon-stars me-1"></i>Sono</span>
+                                <span class="health-tag" style="border-color:#f5c6cb;color:#b71c1c;background:#fff5f5;"><i class="bi bi-wind me-1"></i>Respiração</span>
+                            </div>
+                            <button class="btn btn-outline-success rounded-pill w-100 mt-3">
+                                <i class="bi bi-pencil me-1"></i>Editar preferências
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba: Conquistas -->
+            <div id="tab-conquistas" style="display:none;">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="achievement-card">
+                            <div class="achievement-badge" style="background:#e8f5e9;"><i class="bi bi-leaf-fill text-success"></i></div>
+                            <div>
+                                <div class="fw-semibold small mb-1">Primeiro Passo</div>
+                                <div class="text-secondary" style="font-size:0.78rem;">Complete sua primeira missão.</div>
+                                <div class="text-success fw-bold" style="font-size:0.72rem;margin-top:4px;"><i class="bi bi-check-circle-fill me-1"></i>Desbloqueada em 05/01/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="achievement-card">
+                            <div class="achievement-badge" style="background:#fff3e0;"><i class="bi bi-fire text-danger"></i></div>
+                            <div>
+                                <div class="fw-semibold small mb-1">Sequência de 7 Dias</div>
+                                <div class="text-secondary" style="font-size:0.78rem;">Complete missões por 7 dias seguidos.</div>
+                                <div class="text-success fw-bold" style="font-size:0.72rem;margin-top:4px;"><i class="bi bi-check-circle-fill me-1"></i>Desbloqueada em 12/01/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="achievement-card">
+                            <div class="achievement-badge" style="background:#e3f2fd;"><i class="bi bi-droplet-fill" style="color:#1565c0;"></i></div>
+                            <div>
+                                <div class="fw-semibold small mb-1">Hidratado!</div>
+                                <div class="text-secondary" style="font-size:0.78rem;">Complete a missão de hidratação 10 vezes.</div>
+                                <div class="text-success fw-bold" style="font-size:0.72rem;margin-top:4px;"><i class="bi bi-check-circle-fill me-1"></i>Desbloqueada em 18/01/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="achievement-card">
+                            <div class="achievement-badge" style="background:#f3e5f5;"><i class="bi bi-person-arms-up" style="color:#6a1b9a;"></i></div>
+                            <div>
+                                <div class="fw-semibold small mb-1">Mente Clara</div>
+                                <div class="text-secondary" style="font-size:0.78rem;">Medite por 5 dias consecutivos.</div>
+                                <div class="text-success fw-bold" style="font-size:0.72rem;margin-top:4px;"><i class="bi bi-check-circle-fill me-1"></i>Desbloqueada em 20/01/2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="achievement-card locked">
+                            <div class="achievement-badge" style="background:#f5f5f5;"><i class="bi bi-trophy" style="color:#9e9e9e;"></i></div>
+                            <div>
+                                <div class="fw-semibold small mb-1">Mestre da Harmonia</div>
+                                <div class="text-secondary" style="font-size:0.78rem;">Alcance 30 dias perfeitos consecutivos.</div>
+                                <div class="text-secondary" style="font-size:0.72rem;margin-top:4px;"><i class="bi bi-lock-fill me-1"></i>18 / 30 dias perfeitos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="achievement-card locked">
+                            <div class="achievement-badge" style="background:#f5f5f5;"><i class="bi bi-stars" style="color:#9e9e9e;"></i></div>
+                            <div>
+                                <div class="fw-semibold small mb-1">Luz Interior Máxima</div>
+                                <div class="text-secondary" style="font-size:0.78rem;">Evolua sua Luz Interior ao nível máximo.</div>
+                                <div class="text-secondary" style="font-size:0.72rem;margin-top:4px;"><i class="bi bi-lock-fill me-1"></i>Nível 6 / 10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba: Privacidade & LGPD -->
+            <div id="tab-privacidade" style="display:none;">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="info-card p-4 mb-4">
+                            <div class="section-title mb-3">Consentimento de Dados</div>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex align-items-center justify-content-between p-3 rounded-3" style="background:#f8fdf8;border:1px solid #e8ede8;">
+                                    <div>
+                                        <div class="fw-semibold small">Dados de saúde e atividade</div>
+                                        <div class="text-secondary" style="font-size:0.78rem;">Passos, sono, hidratação e missões concluídas.</div>
+                                    </div>
+                                    <div class="form-check form-switch mb-0">
+                                        <input class="form-check-input" type="checkbox" checked style="width:42px;height:22px;cursor:pointer;">
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between p-3 rounded-3" style="background:#f8fdf8;border:1px solid #e8ede8;">
+                                    <div>
+                                        <div class="fw-semibold small">Comunicações e notificações</div>
+                                        <div class="text-secondary" style="font-size:0.78rem;">E-mails e push sobre missões e recompensas.</div>
+                                    </div>
+                                    <div class="form-check form-switch mb-0">
+                                        <input class="form-check-input" type="checkbox" checked style="width:42px;height:22px;cursor:pointer;">
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between p-3 rounded-3" style="background:#f8fdf8;border:1px solid #e8ede8;">
+                                    <div>
+                                        <div class="fw-semibold small">Dados analíticos e melhoria do produto</div>
+                                        <div class="text-secondary" style="font-size:0.78rem;">Análise de uso para melhorar a experiência.</div>
+                                    </div>
+                                    <div class="form-check form-switch mb-0">
+                                        <input class="form-check-input" type="checkbox" style="width:42px;height:22px;cursor:pointer;">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-secondary mt-3 mb-0" style="font-size:0.78rem;">
+                                <i class="bi bi-shield-check me-1 text-success"></i>
+                                Seus dados são protegidos conforme a Lei Geral de Proteção de Dados (LGPD – Lei 13.709/2018).
+                            </p>
+                        </div>
+
+                        <!-- Download de dados -->
+                        <div class="info-card p-4 mb-4">
+                            <div class="section-title mb-3">Seus Dados</div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="fw-semibold small mb-1">Exportar meus dados</div>
+                                    <div class="text-secondary" style="font-size:0.78rem;">Receba um arquivo com todas as suas informações em até 48h.</div>
+                                </div>
+                                <button class="btn btn-outline-success rounded-pill px-3" style="font-size:0.82rem;">
+                                    <i class="bi bi-download me-1"></i>Solicitar
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Zona de perigo -->
+                        <div class="danger-zone p-4">
+                            <div class="section-title mb-3" style="color:#b71c1c;">Zona de Risco</div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div>
+                                    <div class="fw-semibold small mb-1">Excluir minha conta</div>
+                                    <div class="text-secondary" style="font-size:0.78rem;">Esta ação é irreversível. Todos os seus dados serão apagados.</div>
+                                </div>
+                                <button class="btn btn-sm rounded-pill px-3" style="background:#fdecea;color:#c62828;font-size:0.8rem;font-weight:600;border:none;"
+                                    data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                    <i class="bi bi-trash me-1"></i>Excluir conta
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="border-top mt-5 py-4 px-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="label-uppercase text-secondary" style="font-size: 0.7rem;">© 2024 CareFit+ Wellness. Todos os direitos reservados.</span>
+                    <div class="d-flex gap-4">
+                        <a href="#" class="label-uppercase text-secondary text-decoration-none" style="font-size: 0.7rem;">Política de Privacidade</a>
+                        <a href="#" class="label-uppercase text-secondary text-decoration-none" style="font-size: 0.7rem;">Conformidade LGPD</a>
+                        <a href="#" class="label-uppercase text-secondary text-decoration-none" style="font-size: 0.7rem;">Termos de Serviço</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Modal exclusão -->
+    <div class="modal fade" id="deleteModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4 border-0" style="border-radius:20px;">
+                <div class="text-center mb-3"><i class="bi bi-exclamation-triangle-fill text-warning" style="font-size:3rem;"></i></div>
+                <h5 class="fw-bold text-center mb-1">Excluir conta permanentemente?</h5>
+                <p class="text-secondary text-center small mb-4">Esta ação não pode ser desfeita. Todos os seus pontos, histórico e dados serão apagados de forma definitiva conforme a LGPD.</p>
+                <div class="mb-3">
+                    <label class="form-label small fw-semibold text-secondary">Digite <strong>CONFIRMAR</strong> para prosseguir</label>
+                    <input type="text" class="form-control rounded-3" id="delete-confirm-input" placeholder="CONFIRMAR">
+                </div>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-light rounded-pill flex-fill" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn rounded-pill flex-fill fw-semibold" style="background:#c62828;color:#fff;" onclick="checkDelete()">Excluir permanentemente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/profile.js"></script>
+</body>
+</html>
