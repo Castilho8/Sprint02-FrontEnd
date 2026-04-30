@@ -18,10 +18,3 @@ Aplicação web de bem-estar e saúde corporativa com sistema de missões diári
 ## Como executar
 
 Abra o arquivo `index.html` diretamente no navegador. Não requer servidor ou instalação.
-
-## Integrantes
-
-| Nome | RM |
-|---|---|
-| Bruno Santos Castilho | 566799 |
-| Murilo Jeronimo Ferreira Nunes | 560641 |
