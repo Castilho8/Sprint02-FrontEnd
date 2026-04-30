@@ -1,342 +1,496 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CareFit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar Mobile -->
     <nav class="navbar d-lg-none" id="mobile-navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <div class="brand-icon"><i class="bi bi-leaf-fill"></i></div>
-                CareFit+
-            </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav flex-column">
-                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./assets/pages/missions.html"><i class="bi bi-check-circle"></i> Missões</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./assets/pages/store.html"><i class="bi bi-cart"></i> Loja</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./assets/pages/profile.html"><i class="bi bi-person"></i> Perfil</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <div class="brand-icon"><i class="bi bi-leaf-fill"></i></div>
+          CareFit+
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                ><i class="bi bi-house"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/pages/missions.html"
+                ><i class="bi bi-check-circle"></i> Missões</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/pages/store.html"
+                ><i class="bi bi-cart"></i> Loja</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/pages/profile.html"
+                ><i class="bi bi-person"></i> Perfil</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="d-flex vh-100 overflow-hidden">
+      <!-- Sidebar Desktop/Tablet -->
+      <div class="d-none d-lg-flex flex-column" id="sidebar">
+        <!-- Logo -->
+        <div class="sidebar-brand d-flex align-items-center gap-3 p-4">
+          <div
+            class="sidebar-logo d-flex align-items-center justify-content-center rounded-circle"
+          >
+            <i class="bi bi-leaf-fill"></i>
+          </div>
+          <div>
+            <div class="sidebar-title">CareFit+</div>
+            <div class="sidebar-subtitle">THE LIVING SANCTUARY</div>
+          </div>
+        </div>
+        <!-- Links -->
+        <nav class="flex-grow-1 px-3">
+          <a href="index.html" class="sidebar-link active">
+            <i class="bi bi-house"></i> Home
+          </a>
+          <a href="./assets/pages/missions.html" class="sidebar-link">
+            <i class="bi bi-check-circle"></i> Missões
+          </a>
+          <a href="./assets/pages/store.html" class="sidebar-link">
+            <i class="bi bi-cart"></i> Loja
+          </a>
+          <a href="./assets/pages/profile.html" class="sidebar-link">
+            <i class="bi bi-person"></i> Perfil
+          </a>
+        </nav>
 
-        <!-- Sidebar Desktop/Tablet -->
-        <div class="d-none d-lg-flex flex-column" id="sidebar">
-
-            <!-- Logo -->
-            <div class="sidebar-brand d-flex align-items-center gap-3 p-4">
-                <div class="sidebar-logo d-flex align-items-center justify-content-center rounded-circle">
-                    <i class="bi bi-leaf-fill"></i>
-                </div>
-                <div>
-                    <div class="sidebar-title">CareFit+</div>
-                    <div class="sidebar-subtitle">THE LIVING SANCTUARY</div>
-
-                </div>
+        <!-- Perfil do usuário -->
+        <div class="sidebar-profile mx-3 mb-3 p-3 rounded-4">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <div class="avatar-wrapper">
+              <img
+                src="https://i.pravatar.cc/56?img=12"
+                class="avatar-img rounded-circle"
+                alt="Avatar"
+              />
             </div>
-            <!-- Links -->
-            <nav class="flex-grow-1 px-3">
-                <a href="index.html" class="sidebar-link active">
-                    <i class="bi bi-house"></i> Home
-                </a>
-                <a href="./assets/pages/missions.html" class="sidebar-link">
-                    <i class="bi bi-check-circle"></i> Missões
-                </a>
-                <a href="./assets/pages/store.html" class="sidebar-link">
-                    <i class="bi bi-cart"></i> Loja
-                </a>
-                <a href="./assets/pages/profile.html" class="sidebar-link">
-                    <i class="bi bi-person"></i> Perfil
-                </a>
-            </nav>
-
-            <!-- Perfil do usuário -->
-            <div class="sidebar-profile mx-3 mb-3 p-3 rounded-4">
-                <div class="d-flex align-items-center gap-3 mb-2">
-                    <div class="avatar-wrapper">
-                        <img src="https://i.pravatar.cc/56?img=12" class="avatar-img rounded-circle" alt="Avatar">
-                    </div>
-                    <div>
-                        <div class="profile-name">Bruno Silva</div>
-                        <div class="profile-level">
-                            <i class="bi bi-shield-fill-check"></i> Nível 12 · Guerreiro
-                        </div>
-                    </div>
-                </div>
-                <div class="xp-label d-flex justify-content-between mb-1">
-                    <span>XP</span>
-                    <span>740 / 1000</span>
-                </div>
-                <div class="progress" style="height: 8px; border-radius: 50px;">
-                    <div class="progress-bar" role="progressbar"
-                        style="width: 74%; background: linear-gradient(90deg, #43a047, #a5d6a7);" aria-valuenow="74"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+            <div>
+              <div class="profile-name">Bruno Silva</div>
+              <div class="profile-level">
+                <i class="bi bi-shield-fill-check"></i> Nível 12 · Guerreiro
+              </div>
             </div>
+          </div>
+          <div class="xp-label d-flex justify-content-between mb-1">
+            <span>XP</span>
+            <span>740 / 1000</span>
+          </div>
+          <div class="progress" style="height: 8px; border-radius: 50px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="
+                width: 74%;
+                background: linear-gradient(90deg, #43a047, #a5d6a7);
+              "
+              aria-valuenow="74"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
 
+      <main class="flex-grow-1 p-4 overflow-y-auto" id="main-content">
+        <!-- Top bar -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h5 class="fw-bold text-success mb-0">Dashboard</h5>
+          <div class="d-flex align-items-center gap-3">
+            <span
+              class="badge rounded-pill border bg-white text-dark fw-semibold px-3 py-2"
+            >
+              <i class="bi bi-fire text-danger"></i> 12 Dias
+            </span>
+            <i class="bi bi-bell fs-5 text-secondary"></i>
+          </div>
         </div>
 
-        <main class="flex-grow-1 p-4 overflow-y-auto" id="main-content">
+        <!-- Hero -->
+        <div class="hero-section rounded-4 p-5 mb-4">
+          <div class="row align-items-center g-4">
+            <!-- Texto -->
+            <div class="col-lg-7">
+              <p class="label-uppercase text-success fw-semibold small mb-2">
+                STATUS DE HOJE
+              </p>
+              <h1 class="display-4 fw-bold mb-3">
+                Rumo ao <span class="text-success">Dia Perfeito.</span>
+              </h1>
+              <p class="text-secondary fs-6 mb-4">
+                Você está a apenas duas missões de completar seu ciclo de
+                harmonia. Sua planta cresceu 12cm hoje.
+              </p>
 
-            <!-- Top bar -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h5 class="fw-bold text-success mb-0">Dashboard</h5>
-                <div class="d-flex align-items-center gap-3">
-                    <span class="badge rounded-pill border bg-white text-dark fw-semibold px-3 py-2">
-                        <i class="bi bi-fire text-danger"></i> 12 Dias
-                    </span>
-                    <i class="bi bi-bell fs-5 text-secondary"></i>
-                </div>
+              <!-- Pills de progresso -->
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span
+                  class="badge rounded-pill border border-success text-success px-3 py-2"
+                >
+                  <i class="bi bi-check-circle-fill"></i> 5 missões concluídas
+                </span>
+                <span
+                  class="badge rounded-pill border border-warning text-warning px-3 py-2"
+                >
+                  <i class="bi bi-lightning-fill"></i> 2 missões restantes
+                </span>
+                <span
+                  class="badge rounded-pill border border-secondary text-secondary px-3 py-2"
+                >
+                  <i class="bi bi-fire"></i> 12 dias de streak
+                </span>
+              </div>
+
+              <!-- CTA -->
+              <a
+                href="./assets/pages/missions.html"
+                class="btn btn-success rounded-pill px-4"
+              >
+                Ver missões do dia <i class="bi bi-arrow-right ms-1"></i>
+              </a>
             </div>
 
-            <!-- Hero -->
-            <div class="hero-section rounded-4 p-5 mb-4">
-                <div class="row align-items-center g-4">
-
-                    <!-- Texto -->
-                    <div class="col-lg-7">
-                        <p class="label-uppercase text-success fw-semibold small mb-2">STATUS DE HOJE</p>
-                        <h1 class="display-4 fw-bold mb-3">Rumo ao <span class="text-success">Dia Perfeito.</span></h1>
-                        <p class="text-secondary fs-6 mb-4">Você está a apenas duas missões de completar seu ciclo de
-                            harmonia. Sua planta cresceu 12cm hoje.</p>
-
-                        <!-- Pills de progresso -->
-                        <div class="d-flex flex-wrap gap-2 mb-4">
-                            <span class="badge rounded-pill border border-success text-success px-3 py-2">
-                                <i class="bi bi-check-circle-fill"></i> 3 missões concluídas
-                            </span>
-                            <span class="badge rounded-pill border border-warning text-warning px-3 py-2">
-                                <i class="bi bi-lightning-fill"></i> 2 missões restantes
-                            </span>
-                            <span class="badge rounded-pill border border-secondary text-secondary px-3 py-2">
-                                <i class="bi bi-fire"></i> 12 dias de streak
-                            </span>
-                        </div>
-
-                        <!-- CTA -->
-                        <a href="./assets/pages/missions.html" class="btn btn-success rounded-pill px-4">
-                            Ver missões do dia <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
+            <!-- Card vitalidade -->
+            <div class="col-lg-5">
+              <div class="card border-0 shadow-sm rounded-4 p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <div>
+                    <div class="display-5 fw-bold lh-1">840</div>
+                    <div class="label-uppercase text-secondary small mt-2">
+                      PONTOS DE VITALIDADE
                     </div>
-
-                    <!-- Card vitalidade -->
-                    <div class="col-lg-5">
-                        <div class="card border-0 shadow-sm rounded-4 p-4">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <div>
-                                    <div class="display-5 fw-bold lh-1">840</div>
-                                    <div class="label-uppercase text-secondary small mt-2">PONTOS DE VITALIDADE</div>
-                                </div>
-                                <span class="badge rounded-pill text-success fs-6 px-3 py-2 badge-hoje">+120 hoje</span>
-                            </div>
-                            <hr class="my-3">
-                            <div class="d-flex justify-content-between mb-2 fw-semibold small">
-                                <span>Nível 24</span>
-                                <span>Nível 25</span>
-                            </div>
-                            <div class="progress rounded-pill mb-2" style="height: 8px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%;"
-                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p class="text-secondary fst-italic small mb-0">Mais 160 pontos para evoluir sua Luz
-                                Interior</p>
-                        </div>
-                    </div>
-
+                  </div>
+                  <span
+                    class="badge rounded-pill text-success fs-6 px-3 py-2 badge-hoje"
+                    >+120 hoje</span
+                  >
                 </div>
+                <hr class="my-3" />
+                <div
+                  class="d-flex justify-content-between mb-2 fw-semibold small"
+                >
+                  <span>Nível 24</span>
+                  <span>Nível 25</span>
+                </div>
+                <div class="progress rounded-pill mb-2" style="height: 8px">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 65%"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="text-secondary fst-italic small mb-0">
+                  Mais 160 pontos para evoluir sua Luz Interior
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Cards -->
-            <div class="row g-4">
-
-                <!-- Planta Física -->
-                <div class="col-12 col-md-6">
-                    <div class="h-100 rounded-4 p-4 card-planta">
-                        <p class="fw-bold mb-1"><i class="bi bi-person-arms-up"></i> Planta Física</p>
-                        <p class="text-secondary small">Sua vitalidade corporal traduzida em vida.</p>
-                        <div class="d-flex align-items-center justify-content-center my-3 ilustracao-visual">
-                            <i class="bi bi-tree-fill text-success" style="font-size: 7rem; opacity: 0.85;"></i>
-                        </div>
-                        <div class="row g-2 mt-2">
-                            <div class="col-6">
-                                <div class="bg-white rounded-3 p-3">
-                                    <p class="label-uppercase text-secondary small mb-1">MOVIMENTO</p>
-                                    <p class="fw-bold mb-0">8,432 <span
-                                            class="fw-normal text-secondary small">passos</span></p>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="bg-white rounded-3 p-3">
-                                    <p class="label-uppercase text-secondary small mb-1">SONO</p>
-                                    <p class="fw-bold mb-0">7h 20m <span
-                                            class="fw-normal text-secondary small">restaurado</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Cards -->
+        <div class="row g-4">
+          <!-- Planta Física -->
+          <div class="col-12 col-md-6">
+            <div class="h-100 rounded-4 p-4 card-planta">
+              <p class="fw-bold mb-1">
+                <i class="bi bi-person-arms-up"></i> Planta Física
+              </p>
+              <p class="text-secondary small">
+                Sua vitalidade corporal traduzida em vida.
+              </p>
+              <div
+                class="d-flex align-items-center justify-content-center my-3 ilustracao-visual"
+              >
+                <i
+                  class="bi bi-tree-fill text-success"
+                  style="font-size: 7rem; opacity: 0.85"
+                ></i>
+              </div>
+              <div class="row g-2 mt-2">
+                <div class="col-6">
+                  <div class="bg-white rounded-3 p-3">
+                    <p class="label-uppercase text-secondary small mb-1">
+                      MOVIMENTO
+                    </p>
+                    <p class="fw-bold mb-0">
+                      8,432
+                      <span class="fw-normal text-secondary small">passos</span>
+                    </p>
+                  </div>
                 </div>
-
-                <!-- Luz Interior -->
-                <div class="col-12 col-md-6">
-                    <div class="h-100 rounded-4 p-4 card-luz">
-                        <p class="fw-bold mb-1"><i class="bi bi-sun"></i> Luz Interior</p>
-                        <p class="text-secondary small">Sua clareza mental e equilíbrio emocional.</p>
-                        <div class="luz-visual ilustracao-visual my-3">
-                            <div class="luz-ring ring-3"></div>
-                            <div class="luz-ring ring-2"></div>
-                            <div class="luz-ring ring-1"></div>
-                            <div class="luz-core">
-                                <i class="bi bi-moon-fill"></i>
-                            </div>
-                        </div>
-                        <div class="row g-2 mt-2">
-                            <div class="col-6">
-                                <div class="bg-white rounded-3 p-3">
-                                    <p class="label-uppercase text-secondary small mb-1">MEDITAÇÃO</p>
-                                    <p class="fw-bold mb-0">15 <span
-                                            class="fw-normal text-secondary small">minutos</span></p>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="bg-white rounded-3 p-3">
-                                    <p class="label-uppercase text-secondary small mb-1">FOCO</p>
-                                    <p class="fw-bold mb-0">92% <span
-                                            class="fw-normal text-secondary small">concluído</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-6">
+                  <div class="bg-white rounded-3 p-3">
+                    <p class="label-uppercase text-secondary small mb-1">
+                      SONO
+                    </p>
+                    <p class="fw-bold mb-0">
+                      7h 20m
+                      <span class="fw-normal text-secondary small"
+                        >restaurado</span
+                      >
+                    </p>
+                  </div>
                 </div>
-
+              </div>
             </div>
+          </div>
 
-
-            <!-- Missões do Dia -->
-            <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
-                <h5 class="fw-bold mb-0">Missões do Dia</h5>
-                <a href="./assets/pages/missions.html" class="text-success fw-semibold text-decoration-none small">Ver todas</a>
+          <!-- Luz Interior -->
+          <div class="col-12 col-md-6">
+            <div class="h-100 rounded-4 p-4 card-luz">
+              <p class="fw-bold mb-1"><i class="bi bi-sun"></i> Luz Interior</p>
+              <p class="text-secondary small">
+                Sua clareza mental e equilíbrio emocional.
+              </p>
+              <div class="luz-visual ilustracao-visual my-3">
+                <div class="luz-ring ring-3"></div>
+                <div class="luz-ring ring-2"></div>
+                <div class="luz-ring ring-1"></div>
+                <div class="luz-core">
+                  <i class="bi bi-moon-fill"></i>
+                </div>
+              </div>
+              <div class="row g-2 mt-2">
+                <div class="col-6">
+                  <div class="bg-white rounded-3 p-3">
+                    <p class="label-uppercase text-secondary small mb-1">
+                      MEDITAÇÃO
+                    </p>
+                    <p class="fw-bold mb-0">
+                      15
+                      <span class="fw-normal text-secondary small"
+                        >minutos</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="bg-white rounded-3 p-3">
+                    <p class="label-uppercase text-secondary small mb-1">
+                      FOCO
+                    </p>
+                    <p class="fw-bold mb-0">
+                      92%
+                      <span class="fw-normal text-secondary small"
+                        >concluído</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="row g-3 mb-3">
+        <!-- Missões do Dia -->
+        <div
+          class="d-flex justify-content-between align-items-center mt-5 mb-3"
+        >
+          <h5 class="fw-bold mb-0">Missões do Dia</h5>
+          <a
+            href="./assets/pages/missions.html"
+            class="text-success fw-semibold text-decoration-none small"
+            >Ver todas</a
+          >
+        </div>
 
-                <!-- Caminhada Revigorante -->
-                <div class="col-lg-8">
-                    <div class="bg-white rounded-4 p-4 d-flex align-items-center gap-3 h-100 shadow-sm card-caminhada">
-                        <div
-                            class="missao-icone rounded-circle d-flex align-items-center justify-content-center bg-success bg-opacity-10 flex-shrink-0">
-                            <i class="bi bi-person-walking text-success fs-4"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                            <p class="fw-bold mb-1">Caminhada Revigorante</p>
-                            <p class="text-secondary small mb-0">Faltam apenas 1,568 passos para a meta.</p>
-                        </div>
-                        <div class="text-center flex-shrink-0">
-                            <p class="text-success fw-bold small mb-2">80%</p>
-                            <a href="#" class="btn btn-outline-success rounded-circle p-2 lh-1">
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hidratação -->
-                <div class="col-lg-4">
-                    <div class="bg-white rounded-4 p-4 h-100 shadow-sm">
-                        <div
-                            class="missao-icone rounded-circle d-flex align-items-center justify-content-center bg-primary bg-opacity-10 mb-3">
-                            <i class="bi bi-droplet-fill text-primary fs-4"></i>
-                        </div>
-                        <p class="fw-bold mb-1">Hidratação</p>
-                        <p class="text-secondary small mb-3">6 de 8 copos</p>
-                        <div class="d-flex gap-1">
-                            <div class="rounded-pill bg-primary flex-fill hidratacao-seg"></div>
-                            <div class="rounded-pill bg-primary flex-fill hidratacao-seg"></div>
-                            <div class="rounded-pill bg-primary flex-fill hidratacao-seg"></div>
-                            <div class="rounded-pill bg-primary flex-fill hidratacao-seg"></div>
-                            <div class="rounded-pill bg-primary flex-fill hidratacao-seg"></div>
-                            <div class="rounded-pill bg-primary flex-fill hidratacao-seg"></div>
-                            <div class="rounded-pill bg-secondary bg-opacity-25 flex-fill hidratacao-seg"></div>
-                            <div class="rounded-pill bg-secondary bg-opacity-25 flex-fill hidratacao-seg"></div>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="row g-3 mb-3">
+          <!-- Caminhada Revigorante -->
+          <div class="col-lg-8">
+            <div
+              class="bg-white rounded-4 p-4 d-flex align-items-center gap-3 h-100 shadow-sm card-caminhada"
+            >
+              <div
+                class="missao-icone rounded-circle d-flex align-items-center justify-content-center bg-success bg-opacity-10 flex-shrink-0"
+              >
+                <i class="bi bi-person-walking text-success fs-4"></i>
+              </div>
+              <div class="flex-grow-1">
+                <p class="fw-bold mb-1">Caminhada Revigorante</p>
+                <p class="text-secondary small mb-0">
+                  Faltam apenas 1,568 passos para a meta.
+                </p>
+              </div>
+              <div class="text-center flex-shrink-0">
+                <p class="text-success fw-bold small mb-2">84%</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-success rounded-circle p-2 lh-1"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
             </div>
+          </div>
 
-            <div class="row g-3 mb-4">
-
-                <!-- Respiro Consciente -->
-                <div class="col-lg-5">
-                    <div class="bg-white rounded-4 p-4 h-100 d-flex flex-column shadow-sm">
-                        <div
-                            class="missao-icone rounded-circle d-flex align-items-center justify-content-center missao-icone-laranja mb-3">
-                            <i class="bi bi-person-arms-up fs-4 text-warning"></i>
-                        </div>
-                        <p class="fw-bold mb-1">Respiro Consciente</p>
-                        <p class="text-secondary small mb-4">Sessão de 5 min</p>
-                        <a href="#" class="btn btn-light rounded-pill fw-semibold mt-auto">Iniciar Agora</a>
-                    </div>
-                </div>
-
-                <!-- Evento ao vivo -->
-                <div class="col-lg-7">
-                    <div
-                        class="card-yoga rounded-4 p-4 h-100 d-flex flex-column justify-content-end text-white position-relative overflow-hidden">
-                        <span
-                            class="badge bg-white text-dark rounded-pill px-3 py-2 position-absolute top-0 end-0 m-3 fw-semibold">
-                            <i class="bi bi-circle-fill text-danger" style="font-size: 0.5rem;"></i> Ao Vivo
-                        </span>
-                        <p class="label-uppercase small fw-semibold mb-1 opacity-75">EVENTO AO VIVO</p>
-                        <h5 class="fw-bold mb-1">Yoga Sunset Flow</h5>
-                        <p class="small mb-0 opacity-75">Começa em 45 minutos. Junte-se a 1.2k membros.</p>
-                    </div>
-                </div>
-
+          <!-- Hidratação -->
+          <div class="col-lg-4">
+            <div class="bg-white rounded-4 p-4 h-100 shadow-sm">
+              <div
+                class="missao-icone rounded-circle d-flex align-items-center justify-content-center bg-primary bg-opacity-10 mb-3"
+              >
+                <i class="bi bi-droplet-fill text-primary fs-4"></i>
+              </div>
+              <p class="fw-bold mb-1">Hidratação</p>
+              <p class="text-secondary small mb-3">8 de 8 copos</p>
+              <div class="d-flex gap-1">
+                <div
+                  class="rounded-pill bg-primary flex-fill hidratacao-seg"
+                ></div>
+                <div
+                  class="rounded-pill bg-primary flex-fill hidratacao-seg"
+                ></div>
+                <div
+                  class="rounded-pill bg-primary flex-fill hidratacao-seg"
+                ></div>
+                <div
+                  class="rounded-pill bg-primary flex-fill hidratacao-seg"
+                ></div>
+                <div
+                  class="rounded-pill bg-primary flex-fill hidratacao-seg"
+                ></div>
+                <div
+                  class="rounded-pill bg-primary flex-fill hidratacao-seg"
+                ></div>
+                <div
+                  class="rounded-pill bg-primary flex-fill hidratacao-seg"
+                ></div>
+                <div
+                  class="rounded-pill bg-primary flex-fill hidratacao-seg"
+                ></div>
+              </div>
             </div>
+          </div>
+        </div>
 
+        <div class="row g-3 mb-4">
+          <!-- Respiro Consciente -->
+          <div class="col-lg-5">
+            <div
+              class="bg-white rounded-4 p-4 h-100 d-flex flex-column shadow-sm"
+            >
+              <div
+                class="missao-icone rounded-circle d-flex align-items-center justify-content-center missao-icone-laranja mb-3"
+              >
+                <i class="bi bi-person-arms-up fs-4 text-warning"></i>
+              </div>
+              <p class="fw-bold mb-1">Respiro Consciente</p>
+              <p class="text-secondary small mb-4">Sessão de 5 min</p>
+              <a href="#" class="btn btn-light rounded-pill fw-semibold mt-auto"
+                >Iniciar Agora</a
+              >
+            </div>
+          </div>
 
-            <!-- Footer -->
-            <footer class="border-top mt-4 py-4 px-2">
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="label-uppercase text-secondary" style="font-size: 0.7rem;">© 2024 CareFit+ Wellness.
-                        Todos os direitos reservados.</span>
-                    <div class="d-flex gap-4">
-                        <a href="#" class="label-uppercase text-secondary text-decoration-none"
-                            style="font-size: 0.7rem;">Política de Privacidade</a>
-                        <a href="#" class="label-uppercase text-secondary text-decoration-none"
-                            style="font-size: 0.7rem;">Conformidade LGPD</a>
-                        <a href="#" class="label-uppercase text-secondary text-decoration-none"
-                            style="font-size: 0.7rem;">Termos de Serviço</a>
-                        <a href="#" class="label-uppercase text-secondary text-decoration-none"
-                            style="font-size: 0.7rem;">Suporte</a>
-                    </div>
-                </div>
-            </footer>
+          <!-- Evento ao vivo -->
+          <div class="col-lg-7">
+            <div
+              class="card-yoga rounded-4 p-4 h-100 d-flex flex-column justify-content-end text-white position-relative overflow-hidden"
+            >
+              <span
+                class="badge bg-white text-dark rounded-pill px-3 py-2 position-absolute top-0 end-0 m-3 fw-semibold"
+              >
+                <i
+                  class="bi bi-circle-fill text-danger"
+                  style="font-size: 0.5rem"
+                ></i>
+                Ao Vivo
+              </span>
+              <p class="label-uppercase small fw-semibold mb-1 opacity-75">
+                EVENTO AO VIVO
+              </p>
+              <h5 class="fw-bold mb-1">Yoga Sunset Flow</h5>
+              <p class="small mb-0 opacity-75">
+                Começa em 45 minutos. Junte-se a 1.2k membros.
+              </p>
+            </div>
+          </div>
+        </div>
 
-        </main>
-
+        <!-- Footer -->
+        <footer class="border-top mt-4 py-4 px-2">
+          <div class="d-flex justify-content-between align-items-center">
+            <span
+              class="label-uppercase text-secondary"
+              style="font-size: 0.7rem"
+              >© 2026 CareFit+ Wellness. Todos os direitos reservados.</span
+            >
+            <div class="d-flex gap-4">
+              <a
+                href="#"
+                class="label-uppercase text-secondary text-decoration-none"
+                style="font-size: 0.7rem"
+                >Política de Privacidade</a
+              >
+              <a
+                href="#"
+                class="label-uppercase text-secondary text-decoration-none"
+                style="font-size: 0.7rem"
+                >Conformidade LGPD</a
+              >
+              <a
+                href="#"
+                class="label-uppercase text-secondary text-decoration-none"
+                style="font-size: 0.7rem"
+                >Termos de Serviço</a
+              >
+              <a
+                href="#"
+                class="label-uppercase text-secondary text-decoration-none"
+                style="font-size: 0.7rem"
+                >Suporte</a
+              >
+            </div>
+          </div>
+        </footer>
+      </main>
     </div>
-
-</body>
-
+  </body>
 </html>
